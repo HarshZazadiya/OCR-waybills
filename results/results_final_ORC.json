@@ -1,0 +1,191 @@
+[
+    {
+        "image": "reverseWaybill-156387426414724544_1",
+        "raw_prediction": "156387426414724544_1",
+        "prediction": "156387426414724544_1",
+        "ground_truth": "156387426414724544_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-160390797970200578_1",
+        "raw_prediction": "160796797970200578_1",
+        "prediction": "160390797970200578_1",
+        "ground_truth": "160390797970200578_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-161462098390505344_1",
+        "raw_prediction": "821828057311301177_1",
+        "prediction": "161462098390505344_1",
+        "ground_truth": "161462098390505344_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-161820476409495744_1",
+        "raw_prediction": "566020113336186110_1",
+        "prediction": "161820476409495744_1",
+        "ground_truth": "161820476409495744_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-161827124813349056_1",
+        "raw_prediction": "011823116181391117_1",
+        "prediction": "161827124813349056_1",
+        "ground_truth": "161827124813349056_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-161889931202248896_1",
+        "raw_prediction": "161889931202248396_1",
+        "prediction": "161889931202248896_1",
+        "ground_truth": "161889931202248896_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-162107205368239936_1",
+        "raw_prediction": "810111175391018127_1",
+        "prediction": "162107205368239936_1",
+        "ground_truth": "162107205368239936_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-162127075969633920_1",
+        "raw_prediction": null,
+        "prediction": null,
+        "ground_truth": "162127075969633920_1",
+        "correct": false
+    },
+    {
+        "image": "reverseWaybill-162533794288078400_1",
+        "raw_prediction": "113513213111311109_1",
+        "prediction": "162533794288078400_1",
+        "ground_truth": "162533794288078400_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-162563926371110528_1",
+        "raw_prediction": "113633120111611823_1",
+        "prediction": "162563926371110528_1",
+        "ground_truth": "162563926371110528_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-162590579457558528_1",
+        "raw_prediction": "560296011188481613_1",
+        "prediction": "162590579457558528_1",
+        "ground_truth": "162590579457558528_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-162822952260583552_1",
+        "raw_prediction": "162822952260583552_1",
+        "prediction": "162822952260583552_1",
+        "ground_truth": "162822952260583552_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-163138358833942080_1",
+        "raw_prediction": "186111383432432387_1",
+        "prediction": "163138358833942080_1",
+        "ground_truth": "163138358833942080_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-163167305864402752_1",
+        "raw_prediction": "123058311111011121_1",
+        "prediction": "163167305864402752_1",
+        "ground_truth": "163167305864402752_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-163168391573114432_1",
+        "raw_prediction": "173200363213117112_1",
+        "prediction": "163168391573114432_1",
+        "ground_truth": "163168391573114432_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-163233702292313922_1",
+        "raw_prediction": "139711327712113953_1",
+        "prediction": "163233702292313922_1",
+        "ground_truth": "163233702292313922_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-163253278646505088_1",
+        "raw_prediction": "130283403181101913_1",
+        "prediction": "163253278646505088_1",
+        "ground_truth": "163253278646505088_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-163278430531063296_1",
+        "raw_prediction": "160148904834162414_1",
+        "prediction": "163278430531063296_1",
+        "ground_truth": "163278430531063296_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-163513920653659776_1",
+        "raw_prediction": "213611153383238772_1",
+        "prediction": "163513920653659776_1",
+        "ground_truth": "163513920653659776_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-163575804188803200_1",
+        "raw_prediction": "163575804188903200_1",
+        "prediction": "163575804188803200_1",
+        "ground_truth": "163575804188803200_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-163629705512179520_1",
+        "raw_prediction": "160283711387110817_1",
+        "prediction": "163629705512179520_1",
+        "ground_truth": "163629705512179520_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-163869082838745216_1",
+        "raw_prediction": "112181222188182212_1",
+        "prediction": "163869082838745216_1",
+        "ground_truth": "163869082838745216_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-164010403918364801_1",
+        "raw_prediction": "164010403918464801_1",
+        "prediction": "164010403918364801_1",
+        "ground_truth": "164010403918364801_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-164032400488224576_1",
+        "raw_prediction": "164032400488224576_1",
+        "prediction": "164032400488224576_1",
+        "ground_truth": "164032400488224576_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-164219522434499264_1",
+        "raw_prediction": null,
+        "prediction": null,
+        "ground_truth": "164219522434499264_1",
+        "correct": false
+    },
+    {
+        "image": "reverseWaybill-164659046174134464_1",
+        "raw_prediction": "169171136177084121_1",
+        "prediction": "164659046174134464_1",
+        "ground_truth": "164659046174134464_1",
+        "correct": true
+    },
+    {
+        "image": "reverseWaybill-164712656358576320_1",
+        "raw_prediction": "164712656356576320_1",
+        "prediction": "164712656358576320_1",
+        "ground_truth": "164712656358576320_1",
+        "correct": true
+    }
+]
