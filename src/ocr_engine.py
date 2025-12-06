@@ -3,13 +3,7 @@ import pytesseract
 from easyocr import Reader
 
 reader = Reader(['en'], gpu=True)
-
-
 def run_ocr(enhanced, th, ocr_reader=reader):
-    """
-    Run EasyOCR + Tesseract on given preprocessed images.
-    Returns a list of text lines.
-    """
     easy_lines = ocr_reader.readtext(enhanced, detail=0, paragraph=True)
 
     tess1 = pytesseract.image_to_string(
@@ -26,5 +20,6 @@ def run_ocr(enhanced, th, ocr_reader=reader):
     lines = easy_lines + tess1 + tess2
     lines = [l.strip() for l in lines if len(l.strip()) > 0]
     return lines
+
 
 
