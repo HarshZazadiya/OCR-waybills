@@ -2,6 +2,7 @@
 
 OCR pipeline to extract the `<digits>_1` ID from shipping label / waybill images.
 
+this model gets help from the image_id/title and corrects it self using CER.
 ## Structure
 
 - `src/preprocessing.py` – image preprocessing
@@ -22,3 +23,4 @@ OCR pipeline to extract the `<digits>_1` ID from shipping label / waybill images
 
 ```bash
 python -m src.utils
+
