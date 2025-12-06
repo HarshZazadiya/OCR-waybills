@@ -12,8 +12,13 @@ OCR pipeline to extract the `<digits>_1` ID from shipping label / waybill images
 - `results/` – OCR results & metrics
 
 ## Running evaluation
+## Streamlit Screenshots
+
+### Upload & Preview
+<img src="assets/upload_screen.png" width="700"/>
+
+### Extracted ID Result
+<img src="assets/result_screen.png" width="700"/>
 
 ```bash
 python -m src.utils
-
-![image alt](https://github.com/HarshZazadiya/ORC-waybills/blob/9627550f2b5386b9d77ae0f7493e1f18fa3e1719/Screenshot%202025-12-07%20000644.png)
