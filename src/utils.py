@@ -1,10 +1,8 @@
 import os
 import json
-
 import cv2
 import pandas as pd
 from rapidfuzz.distance import Levenshtein
-
 from .preprocessing import preprocess_image
 from .ocr_engine import run_ocr
 from .text_extraction import (
@@ -13,11 +11,7 @@ from .text_extraction import (
     extract_id_from_lines,
 )
 
-
 def load_ground_truth(gt_csv_path, img_col="Image", gt_col="ground_truth"):
-    """
-    Load and clean ground truth CSV into a dict: {image_name: canonical_gt_id}
-    """
     gt_csv = pd.read_csv(gt_csv_path)
 
     gt_csv[img_col] = gt_csv[img_col].astype(str).str.strip()
@@ -33,13 +27,6 @@ def load_ground_truth(gt_csv_path, img_col="Image", gt_col="ground_truth"):
 
 
 def evaluate_dataset(image_dir, gt_csv_path, output_json_path="results/final_ocr_results.json"):
-    """
-    Main evaluation:
-    - Walk over images in image_dir
-    - Run OCR + extraction
-    - Compare with ground truth
-    - Save JSON + return metrics
-    """
     os.makedirs(os.path.dirname(output_json_path), exist_ok=True)
 
     gt_dict = load_ground_truth(gt_csv_path)
@@ -55,7 +42,6 @@ def evaluate_dataset(image_dir, gt_csv_path, output_json_path="results/final_ocr
 
         fpath = os.path.join(image_dir, fname)
         base = fname.replace(".jpg", "").strip()
-
         print("\nProcessing:", base)
 
         img = cv2.imread(fpath)
@@ -65,11 +51,9 @@ def evaluate_dataset(image_dir, gt_csv_path, output_json_path="results/final_ocr
 
         enhanced, th = preprocess_image(img)
         lines = run_ocr(enhanced, th)
-
         raw_pred_id, conf_score = extract_id_from_lines(lines, base_name=base)
         pred_id = canonical_id(raw_pred_id)
         pred_id = fix_with_filename(pred_id, base)
-
         gt_id = gt_dict.get(base, None)
 
         print("Pred (raw):", raw_pred_id)
@@ -78,7 +62,6 @@ def evaluate_dataset(image_dir, gt_csv_path, output_json_path="results/final_ocr
         print("Confidence:", conf_score)
 
         has_gt = gt_id is not None
-
         if has_gt:
             total += 1
             ok = (pred_id == gt_id)
@@ -86,7 +69,6 @@ def evaluate_dataset(image_dir, gt_csv_path, output_json_path="results/final_ocr
                 correct += 1
         else:
             ok = False
-
         results.append({
             "image": base,
             "raw_prediction": raw_pred_id,
@@ -98,7 +80,6 @@ def evaluate_dataset(image_dir, gt_csv_path, output_json_path="results/final_ocr
 
     accuracy = (correct / total * 100) if total > 0 else 0.0
 
-    # CHARACTER ERROR RATE
     cer_list = []
     for r in results:
         gt = r["ground_truth"]
@@ -110,7 +91,6 @@ def evaluate_dataset(image_dir, gt_csv_path, output_json_path="results/final_ocr
 
     avg_cer = sum(cer_list) / len(cer_list) if cer_list else 0
 
-    # save JSON
     with open(output_json_path, "w") as f:
         json.dump(results, f, indent=4)
 
@@ -129,10 +109,7 @@ def evaluate_dataset(image_dir, gt_csv_path, output_json_path="results/final_ocr
         "total": total,
         "correct": correct,
     }
-
-
 if __name__ == "__main__":
-    # Example paths – adjust for your environment / Colab
     IMAGE_DIR = "/content/drive/MyDrive/ReverseWayBill"
     GT_CSV = "/content/drive/MyDrive/ReverseWayBill_groundtruth/ground_truth.csv"
 
