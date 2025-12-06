@@ -15,7 +15,6 @@ st.title("Shipping Label OCR Demo")
 uploaded_file = st.file_uploader("Upload a waybill image", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
-    # Read image from uploaded file
     file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
     img = cv2.imdecode(file_bytes, cv2.IMREAD_COLOR)
 
@@ -38,7 +37,6 @@ if uploaded_file is not None:
     pred_id = canonical_id(raw_pred_id)
     pred_id = fix_with_filename(pred_id, base_name)
 
-    # --- MAIN INFO (what you actually care about) ---
     st.subheader("Extracted Target ID")
     if pred_id:
         st.write(pred_id)
@@ -47,7 +45,6 @@ if uploaded_file is not None:
     else:
         st.write("No valid ID found")
 
-    # --- OPTIONAL: show raw OCR text only if user wants ---
     show_raw = st.checkbox("Show raw OCR text", value=False)
     if show_raw:
         st.subheader("Raw OCR Text (debug)")
