@@ -153,7 +153,3 @@ fallback using filename + distance logic
 ### Extracted ID Result
 <img src="assets/result_screen.png" width="700"/>
 
-```bash
-python -m src.utils
-
-
