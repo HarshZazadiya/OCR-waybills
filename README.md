@@ -124,7 +124,7 @@ save results inside results/
 
 ## => Results (on my dataset)
 
-My accuracy sits around (add your number here, e.g. ~82–90%), depending on lighting and noise.
+My accuracy sits around ~90%, depending on lighting and noise.
 CER is generally low when the image is clean, but can go up if the print quality is poor.
 
 The important thing is that even if OCR mixes some characters, the final extraction logic still usually lands on the correct _1 ID.
@@ -152,4 +152,5 @@ fallback using filename + distance logic
 
 ### Extracted ID Result
 <img src="assets/result_screen.png" width="700"/>
+
 
